@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">PetCare</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="a">Select Doctor</string>
+
+    <!-- Strings related to login -->
+    <string name="Email">Email</string>
+    <string name="phone">Phone : </string>
+    <string name="address">Address : </string>
+    <string name="petname">Pet Name : </string>
+    <string name="breed">Breed : </string>
+    <string name="color">Colour : </string>
+    <string name="age">Age : </string>
+    <string name="gender">Gender : </string>
+    <string name="name">Owner Name : </string>
+
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

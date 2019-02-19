@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/j"
+    tools:context=".doctorsignup">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="45dp"
+
+        android:layout_marginTop="2dp"
+        android:backgroundTint="#F6F6F6"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColorHint="#F6F6F6"
+        app:layout_constraintBottom_toTopOf="@+id/editText11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="45dp"
+        android:backgroundTint="#F6F6F6"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="#F6F6F6"
+        app:layout_constraintBottom_toTopOf="@+id/editText12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText11" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginRight="144dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button1"
+        android:onClick="signup"
+        android:text="signup"
+        android:textColor="#F6F6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText13" />
+
+    <EditText
+        android:id="@+id/editText11"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="45dp"
+        android:backgroundTint="#F6F6F6"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="45dp"
+        android:backgroundTint="#F6F6F6"
+
+        android:ems="10"
+        android:hint="Hospital"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/editText13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="45dp"
+        android:backgroundTint="#F6F6F6"
+        android:ems="10"
+        android:hint="Specialized in"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText12" />
+
+    <EditText
+        android:id="@+id/editText15"
+        android:layout_width="300dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="140dp"
+        android:backgroundTint="#F6F6F6"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="textPersonName"
+        android:textColorHint="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="201dp"
+        android:layout_height="33dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText15">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F6F6F6"
+            android:buttonTint="#F6F6F6"
+            android:layout_weight="1"
+            android:text="male"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#F6F6F6"
+            android:layout_weight="1"
+            android:text="Female"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/background_light" />
+    </RadioGroup>
+
+
+</android.support.constraint.ConstraintLayout>

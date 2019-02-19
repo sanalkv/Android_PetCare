@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/c"
+    tools:context=".petownerlogin">
+
+    <LinearLayout
+        android:layout_width="394dp"
+        android:layout_height="658dp"
+        android:orientation="vertical"
+        android:padding="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:srcCompat="@drawable/po" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="84dp"
+            android:layout_margin="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="124dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="124dp"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="58dp"
+            app:layout_constraintBottom_toTopOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/owner" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="40dp"
+            android:alpha="0.75"
+            android:background="@drawable/button"
+            android:drawableLeft="@mipmap/user12"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textNoSuggestions"
+
+            android:textColorHint="@color/cardview_dark_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:alpha="0.75"
+            android:background="@drawable/button"
+            android:drawableLeft="@mipmap/pass12"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="@color/cardview_dark_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+
+            android:layout_marginTop="80dp"
+
+
+            android:background="@drawable/button1"
+            android:onClick="login"
+            android:text="LOGIN"
+            android:textColor="#F6F6F6"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+
+            android:layout_marginTop="5dp"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="signup"
+            android:paddingBottom="0dp"
+            android:text="No account? sign up"
+            android:textColor="#fc2cd9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

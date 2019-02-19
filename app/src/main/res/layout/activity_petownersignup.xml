@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/j"
+    tools:context=".petownersignup">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/button1"
+        android:onClick="signup"
+        android:text="Sign up"
+        android:textColor="#F6F6F6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="357dp"
+        android:layout_height="407dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:scrollbarThumbVertical="@drawable/button"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="148dp"
+                android:layout_height="51dp"
+                app:srcCompat="@drawable/xyzz" />
+
+            <EditText
+                android:id="@+id/editText7"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="#F6F6F6"
+                android:ems="10"
+                android:hint="Owner name"
+                android:inputType="textPersonName"
+                android:textColorHint="@android:color/background_light"
+                app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="39dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginStart="45dp"
+                android:orientation="horizontal"
+
+                tools:layout_editor_absoluteX="448dp"
+                tools:layout_editor_absoluteY="304dp">
+
+                <RadioButton
+                    android:id="@+id/radioButton33"
+                    android:layout_width="8dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#F6F6F6"
+                    android:text="male"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/background_light" />
+
+                <RadioButton
+                    android:id="@+id/radioButton44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#F6F6F6"
+                    android:text="Female"
+                    android:textColor="@android:color/background_light"
+                    android:textColorHint="@android:color/background_light" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="#F6F6F6"
+                android:ems="10"
+                android:hint="Username"
+
+                android:inputType="textPersonName"
+                android:textColorHint="#F6F6F6"
+                app:layout_constraintBottom_toTopOf="@+id/editText8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="1dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginStart="45dp"
+                android:backgroundTint="#F6F6F6"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textPersonName"
+                android:textColorHint="@android:color/background_light"
+                app:layout_constraintBottom_toTopOf="@+id/editText6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+            <EditText
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="#F6F6F6"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColorHint="#F6F6F6"
+                app:layout_constraintBottom_toTopOf="@+id/editText9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText8" />
+
+            <EditText
+                android:id="@+id/editText19"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginStart="45dp"
+                android:backgroundTint="#F6F6F6"
+                android:ems="10"
+                android:hint="Phone number"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/cardview_light_background"
+                app:layout_constraintBottom_toTopOf="@+id/button4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+            <EditText
+                android:id="@+id/editText18"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="39dp"
+
+                android:layout_marginStart="45dp"
+                android:backgroundTint="#F6F6F6"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/cardview_light_background"
+                app:layout_constraintBottom_toTopOf="@+id/button4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="97dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/pet" />
+
+            <EditText
+                android:id="@+id/editText17"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#F6F6F6"
+                android:ems="10"
+                android:hint="Pet name"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/cardview_light_background"
+                app:layout_constraintBottom_toTopOf="@+id/button4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+            <EditText
+                android:id="@+id/editText16"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginStart="45dp"
+                android:backgroundTint="#F6F6F6"
+                android:ems="10"
+                android:hint="Breed"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/cardview_light_background"
+                app:layout_constraintBottom_toTopOf="@+id/button4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+            <EditText
+                android:id="@+id/editText14"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginStart="45dp"
+                android:backgroundTint="#F6F6F6"
+                android:ems="10"
+                android:hint="Color"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/cardview_light_background"
+                app:layout_constraintBottom_toTopOf="@+id/button4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+            <EditText
+                android:id="@+id/editText21"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginBottom="0dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginStart="45dp"
+                android:backgroundTint="#F6F6F6"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="textPersonName"
+                android:textColorHint="@color/cardview_light_background"
+                app:layout_constraintBottom_toTopOf="@+id/button4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="26dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginStart="45dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#F6F6F6"
+                    android:text="Male"
+                    android:textColor="#F6F6F6" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="#F6F6F6"
+                    android:text="Female"
+                    android:textColor="#F6F6F6" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/editText9"
+                android:layout_width="275dp"
+                android:layout_height="52dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="39dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="0dp"
+                android:backgroundTint="#F6F6F6"
+                android:ems="10"
+                android:hint="Hospital"
+                android:inputType="textPersonName"
+                android:textColorHint="@android:color/background_light"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginLeft="45dp"
+
+                android:layout_marginRight="39dp"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="0dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
